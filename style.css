@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 3rem;
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -27,13 +31,13 @@ nav {
     justify-content: space-evenly;
 }
 
-header nav a {
+header a {
     text-decoration: none;
     color: black;
     padding: 1rem;
 }
 
-header nav a:hover, #info a:hover {
+header a:hover, #info a:hover {
     color: #222;
     transition: 0.3s;
     text-decoration: underline;
@@ -90,15 +94,62 @@ header nav a:hover, #info a:hover {
     width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
-    #info-box {
-        flex-wrap: wrap;
-        margin: 0 20%;
-    }
-}
-
 #icons {
     font-size: 1rem;
     color: #222;
     padding-bottom: 0.5rem;
 }
+
+#dropdown-menu {
+    display: none;
+    height: 100%;
+}
+
+#dropdown-menu a {
+    display: none;
+}
+
+#dropdown-menu-items {
+    display: none;
+}
+
+#about-me, #research-interests {
+    padding: 1rem 0;
+}
+
+#about-me p, #research-interests p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#dropdown-menu-icon {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    
+}
+@media only screen and (max-width: 900px) {
+    #info-box {
+        flex-wrap: wrap;
+        margin: 0 20%;
+    }
+
+    #dropdown-menu {
+        display: inline-block;
+    }
+
+    #dropdown-menu-icon {
+        cursor: pointer;
+    }
+
+    #dropdown-menu-icon:hover {
+        color: #222;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+

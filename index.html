@@ -23,10 +23,20 @@
         <header>
             <h1>Pavel Hudec</h1>
             <nav>
-                <a href="#">CV</a>
-                <a href="#">About Me</a>
-                <a href="#">Research Interests</a>
+                <div id="menu">
+                    <a href="#basic-info">CV</a>
+                    <a href="#about-me">About Me</a>
+                    <a href="#research-interests">Research Interests</a>
+                </div>
+                <div id="dropdown-menu">
+                    <div id="dropdown-menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                </div>
             </nav>
+            <div id="dropdown-menu-items">
+                <a href="#basic-info" class="dropdown-menu-item">CV</a>
+                <a href="#about-me" class="dropdown-menu-item">About Me</a>
+                <a href="#research-interests" class="dropdown-menu-item">Research Interests</a>
+            </div>
         </header>
         <main>
             <div id="basic-info">
@@ -49,10 +59,19 @@
                         <img src="src/photo.jpg" alt="Pavel Hudec" id="photo"/>
                     </div>
                 </div>
-                <div id="about-me-text">
+                <div id="about-me">
 
                 </div>
             </div>
+
+            <div id="about-me">
+                <p>I am a second-year PhD student at HKUST supervized by <a href="https://goharshady.com">Amir Goharshady</a>.</p>
+            </div>
+            <div id="research-interests">
+                <p>My research interests relate to the overall group focus on program verification, where I am particularly interested in the parameterization of SMT solvers. I have also worked in probabilistic cache management, abstract interpretation and Markov decision processes.</p>
+            </div>
         </main>
+
+        <script src="main.js"></script>
     </body>
 </html>
