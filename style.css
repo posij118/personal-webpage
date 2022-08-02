@@ -1,0 +1,72 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 3rem;
+    display: flex;
+    padding: 1rem 10%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+header nav a:hover, #info a:hover {
+    color: #222;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+#info-box {
+    display: flex;
+    min-height: 300px;
+}
+
+#info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    flex: 1 1 500px;
+    vertical-align: middle;
+}
+
+#photo-box {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo {
+    width: 80%;
+    height: auto;
+    margin: 5rem 0;
+}
+
+#info a {
+    text-decoration: none;
+    color: black;
+}
+
