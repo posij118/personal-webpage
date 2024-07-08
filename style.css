@@ -22,7 +22,7 @@ header {
 }
 
 main {
-    padding: 1rem 10%;
+    padding: 1rem 0;
 }
 
 nav {
@@ -113,14 +113,17 @@ header a:hover, #info a:hover {
     display: none;
 }
 
-#about-me, #research-interests {
-    padding: 1rem 0;
+#about-me, #research-interests, #publications {
+    padding: 1rem 10%;
 }
 
-#about-me p, #research-interests p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+#about-me p, #research-interests p, #publications p {
+    line-height: 1.2rem;
     text-align: center;
+}
+
+#publications {
+    background-color: aliceblue;
 }
 
 #dropdown-menu-icon {
